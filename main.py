@@ -18,9 +18,9 @@ def numbers2():
     print(a, '*', b, '= ',
           a * b)
     print(a, '/', b, '= ',
-          a / b)
+          int(a / b))
     print(b, '/', a, '= ',
-          b / a)
+          int(b / a))
 
     print('Квадрат первого числа = ',
           a*a)
@@ -35,7 +35,6 @@ def numbers2():
     else:
         print('Число ', b, 'больше числа ', a)
 
-    vib()
 
 def merge(left_list, right_list):
     sorted_list = []
@@ -94,10 +93,9 @@ def sort():
     print('Изначальный массив для сортировки слиянием: ',
           random_list_of_nums)
     random_list_of_nums = merge_sort(random_list_of_nums)
-    print('Отсрортированный массив: ',
+    print('Отсортированный массив: ',
           random_list_of_nums)
 
-    vib()
 
 def partition(nums, low, high):
     # Выбираем средний элемент в качестве опорного
@@ -143,7 +141,7 @@ def sort1():
     print('Осортированный массив: \n',
           random_list_of_nums)
 
-    vib()
+
 
 
 #Сумма чисел числа
@@ -156,7 +154,7 @@ def sumshisla():
         var_1 = var_1 // 10
     print("Сумма цифр равна:", total)
 
-    vib()
+
 
 
 #Количество цифр в числе
@@ -168,7 +166,7 @@ def kolchisla():
         var_1 = var_1 // 10
     print("Количество цифр равно:", count)
 
-    vib()
+
 
 
 #Факториалы
@@ -182,7 +180,7 @@ def fact():
         number -= 1
     print(result)
 
-    vib()
+
 
 
 #:Жизненные советы и цитаты
@@ -222,7 +220,6 @@ def auf():
 
     else:
         print('Не тот силен, кто не ошибается, а тот кто не боится ошибиться')
-    vib()
 
 
 
@@ -274,7 +271,6 @@ def piramid():
     print('Массив после сортировки',
           random_list_of_nums)
 
-    vib()
 
 
 def test():
@@ -418,7 +414,7 @@ def test():
 
 
     print('-' * 100)
-    vib()
+
 
 
 
@@ -440,33 +436,42 @@ def vib():
 
     if (vibor==1):
         numbers2()
+        vib()
 
     elif(vibor==0):
         print('Спасибо за работу! Заканчиваем')
 
     elif (vibor==2):
         sort()
+        vib()
 
     elif (vibor==3):
         sort1()
+        vib()
 
     elif (vibor==4):
         sumshisla()
+        vib()
 
     elif (vibor==5):
         kolchisla()
+        vib()
 
     elif (vibor==6):
         fact()
+        vib()
 
     elif (vibor==7):
         auf()
+        vib()
 
     elif (vibor==8):
         piramid()
+        vib()
 
     elif (vibor==9):
         test()
+        vib()
 
     else:
         print('Вы ввели неправильно число, попробуйте заново')
